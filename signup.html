@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Sign up Page</title>
+        <style type="text/css">
+            input[type="submit"]{
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <center>
+            <h2>Sign up</h2>
+            <form action="login.php" method="post">
+                <label for="uname">Username:</label>
+                <input type="text" id="uname" name="uname" 
+                placeholder="Enter username" style="margin: 5px;"><br>
+                <label for="pass">Password:</label>
+                <input type="text" id="pass" name="pass" 
+                placeholder="Enter password" style="margin: 5px;"><br>
+
+                <label for="mail">E-mail:</label>
+                <input type="email" id="mail" name="mail" 
+                placeholder="Enter your E-mail" 
+                style="margin: 5px; margin-left: 20px;"><br>
+
+                <table> 
+                    <tr>
+                        <td><label for="gen">Gender:</label></td>
+                        <td><input type="radio" id="gen1" name="gen" 
+                        value="Male" style="margin: 5px;margin-left: 10px">Male</td>
+                        <td><input type="radio" id="gen2" name="gen"
+                        value="Female" style="margin: 5px;">Female</td>
+                        <td><input type="radio" id="gen3" name="gen"
+                        value="Other" style="margin: 5px;">Other</td>
+                    </tr>
+                </table>
+                
+                <label for="num">Phone num.:</label>
+                <select>
+                    <option>+421</option>
+                    <option>+420</option>
+                </select>
+                <input type="phone" name="tc" placeholder="Enter phone number" 
+                maxlength="9"><br>
+
+                <input type="submit" name="submit" 
+                value="Sign up" style="margin-left: 60px; margin-top: 20px;">
+                <p style="margin: 5px; margin-left: 60px">Got an account?</p>
+                <a href="login.html" 
+                style="margin: 5px; margin-left: 60px">Log in</a>
+            </form>
+        </center>
+    </body>
+</html>
